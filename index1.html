@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/programmer.svg" type="img/svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --primary-color: #CA4361;
+        }
+        
+        body {
+            font-family: "Inter", sans-serif;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        /* content  */
+        
+        main {
+            padding: 30px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        
+        .hero p {
+            font-size: 21px;
+            width: 370;
+            color: #979797;
+            margin-top: 22px;
+        }
+        
+        .hero .cta {
+            width: 270px;
+            height: 65px;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 21px;
+            border: 1px transparent solid;
+            border-radius: 6px;
+            margin-top: 40px;
+            transition: all;
+            transition-duration: 0.3s;
+            cursor: pointer;
+        }
+        
+        .cta:hover {
+            background-color: white;
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .hero h1 {
+            width: 400px;
+            font-size: 50px;
+            font-weight: 600;
+            margin-right: 60px;
+        }
+        
+        .links {
+            list-style-type: none;
+            display: flex;
+            padding: 30px;
+            padding-top: 60px;
+        }
+        
+        .links a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        
+        .buttons button {
+            font-size: 20px;
+            margin-left: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            height: 51px;
+            width: 145px;
+            transition: all;
+            transition: 0.3s;
+        }
+        
+        .links a:hover {
+            color: var(--primary-color);
+            transition: all;
+            transition-duration: 0.3s;
+        }
+        
+        .buttons {
+            border: blueviolet;
+            padding-top: 50px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .filled {
+            background-color: var(--primary-color);
+            color: white;
+            border: 1px solid transparent;
+        }
+        
+        .outlined {
+            background-color: var(--primary-color);
+            color: white;
+            border: 1px solid transparent;
+        }
+        
+        .filled:hover {
+            background-color: white;
+            border-color: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .outlined:hover {
+            background-color: white;
+            border-color: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .line {
+            border: 2px solid var(--primary-color);
+            width: 32px;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        
+        span {
+            color: var(--primary-color);
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="links">
+                <a href="">
+                    <li>About me</li>
+                    <div class="line"></div>
+                </a>
+                <a href="">
+                    <li>Services</li>
+                </a>
+                <a href="">
+                    <li>My Company</li>
+                </a>
+            </ul>
+            <div class="buttons">
+                <button class="filled">Signup</button>
+                <button class="outlined">Log in</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--herosection-->
+        <section class="hero">
+            <h1>I'm Full stack <span>web Application</span> Devolper</h1>
+            <p>i bring your ideas to life using my top-notch and more than 2 years of experience!</p>
+            <button class="cta">Hire me</button>
+        </section>
+        <!--illustration-->
+        <section class="illustration">
+            <img src="./assets/illustration.svg" />
+
+        </section>
+
+    </main>
+</body>
+
+</html>
